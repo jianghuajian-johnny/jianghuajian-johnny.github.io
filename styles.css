@@ -152,16 +152,6 @@ canvas {
     text-decoration: none;
 }
 
-.profile-statement {
-    margin: 28px 0 25px;
-    padding: 0 0 0 18px;
-    border-left: 4px solid var(--blue);
-    color: #17181a;
-    font-size: 15px;
-    font-weight: 650;
-    line-height: 1.55;
-}
-
 .bio-heading,
 .content-section > h2,
 .section-heading h2 {
@@ -643,12 +633,6 @@ canvas {
         gap: 5px 12px;
         margin-top: 8px;
         font-size: 12px;
-    }
-
-    .profile-statement {
-        margin: 19px 0 18px;
-        padding-left: 12px;
-        font-size: 13px;
     }
 
     .bio-heading,
