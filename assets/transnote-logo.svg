@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="40" viewBox="0 0 132 40" role="img" aria-labelledby="title desc">
+  <title id="title">Transnote AI</title>
+  <desc id="desc">Transnote AI wordmark</desc>
+  <rect width="132" height="40" rx="5" fill="#f4f7fb"/>
+  <path d="M13 12h10v4h-3v12h-4V16h-3z" fill="#243a67"/>
+  <path d="M26 12h4v16h-4zM32 12h4v4h-4z" fill="#4a68f5"/>
+  <text x="43" y="25" fill="#243a67" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="1.1">TRANSNOTE</text>
+  <text x="103" y="25" fill="#4a68f5" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="0.6">AI</text>
+</svg>
