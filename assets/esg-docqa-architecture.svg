@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title description">
+  <title id="title">ESG-DocQA architecture</title>
+  <desc id="description">Financial and ESG disclosure passages are linked to a human-reviewed question and evidence benchmark. Controlled retrieval returns passages for an evidence-grounded answer, and retrieved passages are compared with human-reviewed reference evidence.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0 0L8 4L0 8Z" fill="#748091"/>
+    </marker>
+    <marker id="arrow-small" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <path d="M0 0L7 3.5L0 7Z" fill="#526274"/>
+    </marker>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#e8ebef" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="560" fill="#f7f8fa"/>
+  <rect width="900" height="560" fill="url(#grid)" opacity=".42"/>
+  <text x="30" y="34" fill="#536174" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">ESG-DOCQA / EVALUATION WORKFLOW</text>
+  <text x="30" y="64" fill="#202a36" font-family="Arial, sans-serif" font-size="22" font-weight="700">From disclosure to evidence-grounded answers</text>
+  <text x="30" y="87" fill="#667181" font-family="Arial, sans-serif" font-size="12">Human-reviewed reference evidence anchors a controlled retrieval comparison.</text>
+
+  <g font-family="Arial, sans-serif">
+    <rect x="28" y="116" width="190" height="220" rx="7" fill="#fff" stroke="#dce1e7"/>
+    <rect x="28" y="116" width="190" height="4" rx="2" fill="#4a68f5"/>
+    <text x="44" y="143" fill="#718096" font-size="9" font-weight="700" letter-spacing="1">01 / SOURCE</text>
+    <text x="44" y="166" fill="#263244" font-size="14" font-weight="700">Disclosure documents</text>
+    <g transform="translate(83 184)">
+      <rect x="23" y="3" width="55" height="66" rx="3" fill="#f0f3ff" stroke="#9aa9ff"/>
+      <path d="M63 3v15h15" fill="none" stroke="#9aa9ff"/>
+      <path d="M33 29h33M33 38h34M33 47h25" stroke="#aab3c0" stroke-width="3" stroke-linecap="round"/>
+      <rect x="30" y="52" width="36" height="8" rx="2" fill="#f5d989" opacity=".8"/>
+      <path d="M11 13h12M11 22h12M11 31h12" stroke="#c3cad4" stroke-width="3" stroke-linecap="round"/>
+      <path d="M11 6v35" stroke="#4a68f5" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text x="44" y="275" fill="#344154" font-size="11" font-weight="600">Financial &amp; ESG reports</text>
+    <text x="44" y="296" fill="#788292" font-size="10">Source passages are identified</text>
+    <text x="44" y="311" fill="#788292" font-size="10">for each research question.</text>
+
+    <rect x="246" y="116" width="190" height="220" rx="7" fill="#fff" stroke="#dce1e7"/>
+    <rect x="246" y="116" width="190" height="4" rx="2" fill="#279a87"/>
+    <text x="262" y="143" fill="#718096" font-size="9" font-weight="700" letter-spacing="1">02 / REFERENCE</text>
+    <text x="262" y="166" fill="#263244" font-size="14" font-weight="700">Human-reviewed pairs</text>
+    <g transform="translate(283 191)">
+      <rect x="0" y="0" width="116" height="74" rx="5" fill="#f1faf8" stroke="#9bcfc5"/>
+      <circle cx="17" cy="19" r="9" fill="#d5f0e9"/>
+      <text x="14" y="22" fill="#137665" font-size="9" font-weight="700">Q</text>
+      <path d="M34 16h62M34 25h48" stroke="#8a9b9b" stroke-width="3" stroke-linecap="round"/>
+      <path d="M12 42h88" stroke="#d6dfdf"/>
+      <rect x="11" y="51" width="6" height="12" rx="2" fill="#279a87"/>
+      <path d="M27 54h71M27 62h54" stroke="#a7b6b6" stroke-width="3" stroke-linecap="round"/>
+      <path d="M95 48l5 5 10-12" fill="none" stroke="#279a87" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="262" y="286" fill="#344154" font-size="11" font-weight="600">Question + supporting evidence</text>
+    <text x="262" y="307" fill="#788292" font-size="10">Reference passages are reviewed</text>
+    <text x="262" y="322" fill="#788292" font-size="10">by a human.</text>
+
+    <rect x="464" y="116" width="190" height="220" rx="7" fill="#fff" stroke="#dce1e7"/>
+    <rect x="464" y="116" width="190" height="4" rx="2" fill="#d18a30"/>
+    <text x="480" y="143" fill="#718096" font-size="9" font-weight="700" letter-spacing="1">03 / RETRIEVAL</text>
+    <text x="480" y="166" fill="#263244" font-size="14" font-weight="700">Controlled retrieval</text>
+    <g transform="translate(508 189)">
+      <rect x="0" y="8" width="110" height="64" rx="5" fill="#fff8ed" stroke="#e5c493"/>
+      <circle cx="26" cy="31" r="10" fill="none" stroke="#c27b1e" stroke-width="2.5"/>
+      <path d="M33 38l8 8" stroke="#c27b1e" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M50 25h42M50 34h35" stroke="#a9a092" stroke-width="3" stroke-linecap="round"/>
+      <rect x="13" y="52" width="81" height="8" rx="3" fill="#f0d8ad"/>
+      <path d="M19 56h36" stroke="#bd812f" stroke-width="2" stroke-linecap="round"/>
+      <path d="M55 78v16m-13-8h26" stroke="#d18a30" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="55" cy="102" r="4" fill="#d18a30"/>
+    </g>
+    <text x="480" y="286" fill="#344154" font-size="11" font-weight="600">Retrieve evidence passages</text>
+    <text x="480" y="307" fill="#788292" font-size="10">Compare retrieval under</text>
+    <text x="480" y="322" fill="#788292" font-size="10">defined experimental conditions.</text>
+
+    <rect x="682" y="116" width="190" height="220" rx="7" fill="#fff" stroke="#dce1e7"/>
+    <rect x="682" y="116" width="190" height="4" rx="2" fill="#374c65"/>
+    <text x="698" y="143" fill="#718096" font-size="9" font-weight="700" letter-spacing="1">04 / RESPONSE</text>
+    <text x="698" y="166" fill="#263244" font-size="14" font-weight="700">Grounded answer</text>
+    <g transform="translate(720 190)">
+      <rect x="0" y="0" width="114" height="78" rx="5" fill="#f3f6f9" stroke="#c5d0dc"/>
+      <path d="M14 18h5M14 18v6m0 28h5m-5 0v-6" stroke="#4a68f5" stroke-width="2" stroke-linecap="round"/>
+      <path d="M28 18h67M28 28h76M28 38h60" stroke="#8290a0" stroke-width="3" stroke-linecap="round"/>
+      <rect x="14" y="57" width="83" height="13" rx="3" fill="#dce8fb"/>
+      <path d="M20 63h48" stroke="#4a68f5" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="88" cy="63" r="3" fill="#279a87"/>
+    </g>
+    <text x="698" y="286" fill="#344154" font-size="11" font-weight="600">Answer linked to its sources</text>
+    <text x="698" y="307" fill="#788292" font-size="10">Supporting passages remain</text>
+    <text x="698" y="322" fill="#788292" font-size="10">inspectable in the result.</text>
+  </g>
+
+  <path d="M220 226h19M438 226h19M656 226h19" fill="none" stroke="#748091" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <rect x="28" y="367" width="844" height="151" rx="7" fill="#fff" stroke="#dce1e7"/>
+  <text x="48" y="394" fill="#536174" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.2">EVIDENCE COMPARISON</text>
+  <text x="48" y="414" fill="#263244" font-family="Arial, sans-serif" font-size="12" font-weight="600">Check retrieved passages against human-reviewed reference evidence</text>
+  <rect x="48" y="434" width="326" height="54" rx="5" fill="#f1f4ff" stroke="#ccd4ff"/>
+  <text x="64" y="456" fill="#4056c7" font-family="Arial, sans-serif" font-size="10" font-weight="700">RETRIEVED EVIDENCE</text>
+  <text x="64" y="475" fill="#637087" font-family="Arial, sans-serif" font-size="10">Passages returned for the question</text>
+  <rect x="526" y="434" width="326" height="54" rx="5" fill="#eef8f5" stroke="#c2e1d9"/>
+  <text x="542" y="456" fill="#187866" font-family="Arial, sans-serif" font-size="10" font-weight="700">REVIEWED REFERENCE</text>
+  <text x="542" y="475" fill="#637087" font-family="Arial, sans-serif" font-size="10">Human-verified supporting passages</text>
+  <path d="M390 461h138" fill="none" stroke="#526274" stroke-width="1.8" marker-start="url(#arrow-small)" marker-end="url(#arrow-small)"/>
+  <rect x="426" y="444" width="66" height="32" rx="16" fill="#fff" stroke="#dce1e7"/>
+  <text x="459" y="464" text-anchor="middle" fill="#526274" font-family="Arial, sans-serif" font-size="9" font-weight="700">COMPARE</text>
+
+  <text x="30" y="543" fill="#778292" font-family="Arial, sans-serif" font-size="10">Traceability connects each question, evidence passage and answer throughout evaluation.</text>
+</svg>
