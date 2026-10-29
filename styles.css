@@ -108,9 +108,9 @@ canvas {
 }
 
 .profile-info h1 span {
-    color: #4b4d52;
-    font-size: 0.72em;
-    font-weight: 550;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .profile-role,
@@ -138,19 +138,6 @@ canvas {
     margin-top: 2px;
 }
 
-.profile-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 16px;
-    margin-top: 14px;
-}
-
-.profile-links a {
-    color: #17181a;
-    font-weight: 600;
-    text-decoration: none;
-}
-
 .bio-heading,
 .content-section > h2,
 .section-heading h2 {
@@ -162,7 +149,7 @@ canvas {
 }
 
 .bio-heading {
-    margin-bottom: 10px;
+    margin: 22px 0 10px;
 }
 
 .bio-copy {
@@ -251,12 +238,12 @@ canvas {
 .project-entry {
     position: relative;
     display: grid;
-    grid-template-columns: 190px minmax(0, 1fr);
+    grid-template-columns: 160px minmax(0, 1fr);
     align-items: start;
-    gap: 21px;
+    gap: 16px;
     min-width: 0;
     margin: 0 -10px;
-    padding: 18px 10px;
+    padding: 14px 8px;
     border-bottom: 1px solid var(--line);
     border-radius: 6px;
     transition: transform 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
@@ -306,7 +293,7 @@ canvas {
 }
 
 .research-thumb {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4 / 5;
 }
 
 .project-thumb img,
@@ -330,7 +317,7 @@ canvas {
 .project-thumb-stack {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     aspect-ratio: auto !important;
     overflow: visible;
     background: transparent;
@@ -347,6 +334,16 @@ canvas {
 .project-thumb-stack .project-illustration {
     width: 100%;
     height: auto;
+}
+
+.project-thumb-stack .project-visual-link:nth-child(2) {
+    aspect-ratio: 4 / 3;
+}
+
+.project-thumb-stack .project-visual-link:nth-child(2) .project-illustration {
+    height: 100%;
+    object-fit: cover;
+    object-position: center 28%;
 }
 
 .research-illustration {
@@ -378,13 +375,13 @@ canvas {
 }
 
 .project-copy h3,
-.timeline-entry h3,
-.education-list h3 {
+.timeline-entry h3 {
     margin: 0 0 5px;
     color: #242529;
     font-size: 17px;
     font-weight: 680;
     line-height: 1.4;
+    overflow-wrap: anywhere;
 }
 
 .project-copy > p:not(.project-meta, .project-stack, .project-note, .project-proof, .publication-status) {
@@ -533,8 +530,7 @@ canvas {
     white-space: nowrap;
 }
 
-.timeline-main > p,
-.education-list article > p:last-child {
+.timeline-main > p {
     margin: 0;
     font-size: 13px;
     line-height: 1.6;
@@ -563,21 +559,15 @@ canvas {
 .award-entry {
     position: relative;
     display: grid;
-    grid-template-columns: 178px minmax(0, 1fr);
+    grid-template-columns: 156px minmax(0, 1fr);
     align-items: start;
-    gap: 20px;
+    gap: 16px;
     min-width: 0;
-    padding: 16px 18px;
+    padding: 14px 16px;
     border: 1px solid #e9e9eb;
     border-radius: 8px;
     background: var(--surface);
     transition: transform 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
-}
-
-.award-entry.award-highlight {
-    border-left: 3px solid var(--blue);
-    padding-left: 15px;
-    background: #f7f8ff;
 }
 
 .award-entry:hover,
@@ -586,14 +576,6 @@ canvas {
     transform: translateY(-4px);
     background: #fbfcff;
     box-shadow: 0 7px 18px rgb(0 0 0 / 9%);
-}
-
-.awards-summary {
-    max-width: 760px;
-    margin: 5px 0 14px;
-    color: var(--muted);
-    font-size: 12.5px;
-    line-height: 1.55;
 }
 
 .award-thumb {
@@ -690,6 +672,7 @@ canvas {
     font-size: 16px;
     font-weight: 680;
     line-height: 1.4;
+    overflow-wrap: anywhere;
 }
 
 .award-entry h3 span {
@@ -800,8 +783,8 @@ body.lightbox-open {
     }
 
     .project-entry {
-        grid-template-columns: 150px minmax(0, 1fr);
-        gap: 16px;
+        grid-template-columns: 128px minmax(0, 1fr);
+        gap: 13px;
     }
 
     .timeline-entry {
@@ -810,9 +793,10 @@ body.lightbox-open {
     }
 
     .award-entry {
-        grid-template-columns: 142px minmax(0, 1fr);
-        gap: 15px;
+        grid-template-columns: 124px minmax(0, 1fr);
+        gap: 13px;
     }
+
 }
 
 @media (max-width: 520px) {
@@ -853,8 +837,8 @@ body.lightbox-open {
     }
 
     .profile-info h1 span {
-        display: inline-block;
-        font-size: 0.7em;
+        display: inline;
+        font-size: inherit;
     }
 
     .profile-role,
@@ -862,13 +846,6 @@ body.lightbox-open {
     .profile-email {
         font-size: 12px;
         line-height: 1.5;
-    }
-
-    .profile-links {
-        justify-content: center;
-        gap: 5px 12px;
-        margin-top: 8px;
-        font-size: 12px;
     }
 
     .bio-heading,
@@ -1032,8 +1009,7 @@ body.lightbox-open {
         font-size: 10px;
     }
 
-    .timeline-main > p,
-    .education-list article > p:last-child {
+    .timeline-main > p {
         font-size: 12px;
     }
 
@@ -1054,17 +1030,13 @@ body.lightbox-open {
         padding: 13px;
     }
 
-    .award-entry.award-highlight {
-        padding-left: 10px;
-    }
-
     .award-entry {
         grid-template-columns: minmax(0, 1fr);
         gap: 11px;
     }
 
     .award-thumb {
-        width: min(100%, 340px);
+        width: min(100%, 280px);
         margin-top: 0;
     }
 
@@ -1078,12 +1050,6 @@ body.lightbox-open {
 
     .award-bullets li {
         font-size: 12px;
-    }
-
-    .awards-summary {
-        margin-top: 4px;
-        margin-bottom: 10px;
-        font-size: 11.5px;
     }
 
     .site-footer {
