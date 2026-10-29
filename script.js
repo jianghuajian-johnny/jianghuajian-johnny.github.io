@@ -332,7 +332,7 @@ lightbox.className = "image-lightbox";
 lightbox.hidden = true;
 lightbox.setAttribute("role", "dialog");
 lightbox.setAttribute("aria-modal", "true");
-lightbox.setAttribute("aria-label", "Enlarged image");
+lightbox.setAttribute("aria-label", "放大查看图片");
 lightbox.tabIndex = -1;
 
 const lightboxImage = document.createElement("img");
