@@ -1,233 +1,280 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f2f2f2">
-    <meta name="description" content="蒋华健（Johnny）的个人网站，展示应用人工智能工程、研究项目、数据产品和工作经历。">
-    <meta property="og:title" content="蒋华健 | 应用人工智能工程师">
-    <meta property="og:description" content="应用人工智能工程、研究和代表性项目。">
+    <meta name="description" content="Huajian Jiang is an AI engineer and agent systems developer working across retrieval, applied AI, model evaluation, and research.">
+    <meta property="og:title" content="Huajian Jiang | AI Engineer &amp; Agent Systems Developer">
+    <meta property="og:description" content="Selected AI systems, research, and projects by Huajian Jiang.">
     <meta property="og:type" content="website">
-    <title>蒋华健 | 应用人工智能工程师</title>
-    <link rel="icon" href="assets/profile-photo.jpg" type="image/jpeg">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Huajian Jiang | AI Engineer &amp; Agent Systems Developer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20261029-2">
+    <script src="script.js?v=20261029-1" defer></script>
 </head>
 <body>
-    <a class="skip-link" href="#main">跳转到主要内容</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <main class="site-shell" id="main">
         <section class="profile-card" id="top" aria-labelledby="profile-name">
             <div class="profile-grid">
-                <img class="profile-photo" src="assets/profile-photo.jpg" alt="蒋华健的个人照片" width="667" height="1000" fetchpriority="high">
+                <img class="profile-photo" src="assets/profile-photo.jpg" alt="Portrait of Huajian Jiang" width="667" height="1000" fetchpriority="high">
                 <div class="profile-info">
-                    <h1 id="profile-name">蒋华健 <span>（Johnny）</span></h1>
-                    <p class="profile-role">应用人工智能工程师</p>
-                    <p class="profile-affiliation">新加坡南洋理工大学 · 计算机硕士（应用人工智能）<br>已于 2026 年 10 月毕业 · <span class="availability">可立即到岗</span></p>
-                    <p class="profile-email">邮箱：<a href="mailto:jianghuajian99@gmail.com">jianghuajian99@gmail.com</a></p>
-                    <div class="profile-links" aria-label="专业链接">
-                        <a href="https://www.linkedin.com/in/huajianjiang/" target="_blank" rel="noreferrer">领英</a>
-                        <a href="https://github.com/jianghuajian-johnny" target="_blank" rel="noreferrer">GitHub</a>
-                        <a href="https://jianghuajian-johnny.github.io/personal-website-cn/" target="_blank" rel="noreferrer">个人网站</a>
+                    <h1 id="profile-name">Huajian Jiang <span>(Johnny)</span></h1>
+                    <p class="profile-role">AI Engineer | Agent Systems Developer</p>
+                    <p class="profile-affiliation">Master of Computing in Applied Artificial Intelligence<br>Nanyang Technological University, Singapore · Graduated in October 2026 · <span class="availability">Available immediately</span></p>
+                    <p class="profile-email">Email: <a href="mailto:jianghuajian99@gmail.com">jianghuajian99@gmail.com</a></p>
+                    <div class="profile-links" aria-label="Professional links">
+                        <a href="https://www.linkedin.com/in/huajianjiang/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <a href="https://github.com/huajianv587" target="_blank" rel="noreferrer">GitHub</a>
                     </div>
                 </div>
             </div>
 
-            <h2 class="bio-heading">个人简介</h2>
-            <p class="bio-copy">我已获得新加坡南洋理工大学应用人工智能方向计算机硕士学位。进入人工智能领域之前，我在数据分析和国际贸易领域积累了 5 年以上经验，长期接触真实供应商、合同、报关流程和业务数据，也因此理解生产环境中的数据质量与运营约束。我的工作包括面向 ESG 研究的多智能体 RAG 系统，以及在行业实习期间参与构建的医疗 LLM 工作流，覆盖语音转写、医学问诊和智能分诊。</p>
-            <p class="bio-copy">我关注让 AI 在实践中值得信赖的工程细节：可追溯的数据血缘、完善的失败处理、可复现的评测，以及对“能运行的原型”和“可交付的生产系统”之间边界的清晰判断。我同时持有 CFA Institute Certificate in ESG Investing，并特别关注金融与可持续发展领域的人工智能应用。</p>
+            <h2 class="bio-heading">Short Bio</h2>
+            <p class="bio-copy">I build applied AI systems that connect retrieval, tool use, and evaluation with real operational workflows. My recent work spans multimodal healthcare RAG, stateful agent workflows, model evaluation, and on-device AI prototypes.</p>
+            <p class="bio-copy">Before moving into AI engineering, I spent nearly five years in data analytics and cross-border supply chain operations. That background shaped how I work: I start from business requirements and data constraints, then build systems that are measurable, maintainable, and clear to the teams that use them.</p>
+            <div class="tech-stack" aria-labelledby="tech-stack-title">
+                <h3 id="tech-stack-title">Core Tech Stack</h3>
+                <ul class="tech-stack-list">
+                    <li><span>Programming &amp; Engineering</span> Python · SQL · PyTorch · FastAPI · Docker · Git · AWS (SageMaker) · Model deployment</li>
+                    <li><span>LLM Training &amp; Applied Systems</span> Qwen full-parameter fine-tuning · PEFT (QLoRA, DoRA, PiSSA) · Advanced and multimodal RAG · LangGraph multi-agent orchestration and tool use · LLM/RAG/agent evaluation harnesses</li>
+                    <li><span>Machine Learning, Evaluation &amp; Multimodal AI</span> Classical ML · Deep learning · Reinforcement learning · Feature engineering · Hyperparameter optimization · Statistical modeling · A/B testing · Computer vision &amp; edge deployment · STT · Video generation · Model deployment</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section" id="experience" aria-labelledby="experience-title">
+            <h2 id="experience-title">Experience</h2>
+            <div class="timeline-list">
+                <article class="timeline-entry">
+                    <div class="timeline-aside">
+                        <p class="timeline-date">Mar 2026 – Present</p>
+                        <a class="company-logo-link" href="https://www.ntu.edu.sg/innovates/news-events/news/detail/transforming-student-ideas-into-promising-ventures" target="_blank" rel="noreferrer" aria-label="Transnote Pte. Ltd. profile on NTU">
+                            <img class="company-logo company-logo-transnote" src="assets/transnote-logo.svg" alt="Transnote AI wordmark" width="132" height="40" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="timeline-main">
+                        <div class="timeline-heading-row">
+                            <h3>AI Engineer Intern <span>/ Transnote Pte. Ltd.</span></h3>
+                            <p class="timeline-location">Singapore</p>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Translated hospital department requirements into supervised fine-tuning workflows, multi-turn dialogue alignment, and department-specific prompt architectures; iterated weekly with new data testing and targeted training to improve healthcare response quality and compliance.</li>
+                            <li>Developed a multimodal healthcare RAG pipeline and stateful agent workflow with hybrid retrieval, reranking, tool calling, memory, ASR, confidence analysis, and human handoff, using 3,000+ medical records, images, and patient logs.</li>
+                            <li>Built an evaluation harness and staged-rollout testing workflow for cross-model benchmarking and online A/B tests; resolved 15+ intent-routing edge cases, reduced human takeover time by 30%, and improved triage accuracy by 12%.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="timeline-entry">
+                    <div class="timeline-aside">
+                        <p class="timeline-date">Nov 2021 – Apr 2025</p>
+                        <a class="company-logo-link" href="https://www.huafeng.com/" target="_blank" rel="noreferrer" aria-label="Huafon Group official website">
+                            <img class="company-logo company-logo-huafon" src="assets/huafeng-logo-en.png" alt="Huafon English wordmark" width="132" height="52" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="timeline-main">
+                        <div class="timeline-heading-row">
+                            <h3>Supply Chain Specialist <span>/ Huafon Group Co., Ltd.</span></h3>
+                            <p class="timeline-location">Wenzhou, China</p>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Managed end-to-end procurement and cross-border logistics for the Indonesia Huaqing Aluminium project, coordinating 89 suppliers across two countries and annual spend exceeding SGD 3.8M. Aligned Incoterms, production lead times, and freight-forwarding schedules to sustain a 99% on-time delivery rate across two major industrial projects.</li>
+                            <li>Renegotiated supplier contracts and commercial terms using should-cost modeling, volume bundling, and tiered pricing, reducing average procurement costs by 11% and delivering SGD 390K in annual savings.</li>
+                            <li>Managed end-to-end import/export customs clearance and freight operations across the shipment portfolio, overseeing HS tariff classification, letters of credit (L/C), and shipping documents (B/L, C/O); achieved a 100% regulatory audit pass rate and reduced port dwell time to under one business day.</li>
+                            <li>Automated demand forecasting and inventory planning by combining historical consumption analytics with LLM-assisted workflows and prompt engineering, improving procurement planning accuracy by 35% and inventory turnover efficiency by 20%.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="timeline-entry">
+                    <div class="timeline-aside">
+                        <p class="timeline-date">May 2020 – Oct 2021</p>
+                        <a class="company-logo-link" href="https://www.newlandmachine.com/" target="_blank" rel="noreferrer" aria-label="Wenzhou Niulanda Machinery Technology official website">
+                            <img class="company-logo" src="assets/niulanda-logo.webp" alt="Wenzhou Niulanda Machinery Technology logo" width="132" height="40" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="timeline-main">
+                        <div class="timeline-heading-row">
+                            <h3>Data Analyst <span>/ Wenzhou Niulanda Machinery Technology Co., Ltd.</span></h3>
+                            <p class="timeline-location">Wenzhou, China</p>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Built relational data structures for 1,000+ cross-border trade records using advanced SQL schema design and automated cleansing rules, creating a data foundation with 95%+ accuracy for downstream analytics.</li>
+                            <li>Optimized customer-retention workflows across 40+ client accounts through behavioral cohort analysis and A/B testing, identifying engagement patterns that drove a 50%+ increase in repeat business.</li>
+                            <li>Automated 10+ interactive BI dashboards and executive reporting workflows for three senior managers through end-to-end ETL pipelines, eliminating recurring manual data collation and saving four hours of operational work per week.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section class="content-section" id="work" aria-labelledby="work-title">
             <div class="section-heading">
                 <div>
-                    <p class="section-kicker">代表性项目</p>
-                    <h2 id="work-title">项目经历</h2>
+                    <p class="section-kicker">Built systems</p>
+                    <h2 id="work-title">Selected Project</h2>
                 </div>
-                <a class="section-link" href="https://github.com/jianghuajian-johnny" target="_blank" rel="noreferrer">查看 GitHub 项目 <span aria-hidden="true">&#8594;</span></a>
+                <a class="section-link" href="https://github.com/huajianv587" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">&#8594;</span></a>
             </div>
 
             <div class="project-list">
                 <article class="project-entry project-featured project-spotlight">
-                    <figure class="project-thumb">
-                        <canvas class="visual-canvas" data-visual="ar" width="900" height="560" role="img" aria-label="面部关键点、可穿戴设备信号和端侧 AI 路由示意图"></canvas>
+                    <figure class="project-thumb project-thumb-stack">
+                        <a class="project-visual-link" href="assets/symface-architecture-horizontal.png" aria-label="Enlarge SymFace system architecture">
+                            <img class="project-illustration" src="assets/symface-architecture-horizontal.png" alt="SymFace horizontal system architecture showing the SwiftUI app, core services, Apple platform capabilities, cloud services, local persistence, and Apple Watch sync" width="1672" height="941" loading="lazy">
+                        </a>
+                        <a class="project-visual-link" href="assets/symface-pinnacle-team.jpg" aria-label="Enlarge SymFace NTU Pinnacle finalist team photo">
+                            <img class="project-illustration" src="assets/symface-pinnacle-team.jpg" alt="SymFace team holding NTU Pinnacle finalist certificates" width="2268" height="3199" loading="lazy">
+                        </a>
                     </figure>
                     <div class="project-copy">
-                        <p class="project-meta">旗舰项目 <span>南洋理工大学 Pinnacle 决赛入围</span></p>
-                        <h3>SymFace：AR 与生物特征 AI 应用</h3>
-                        <p>端到端 iOS/watchOS 健康管理系统，整合 ARKit TrueDepth 三维追踪、100+ 面部特征点、HealthKit 上下文，以及在 Apple Foundation Models 与云端大语言模型之间进行路由的混合 AI 引擎。</p>
-                        <p class="project-proof">端侧优先的生物特征工作流 · 隐私感知的 AI 路由 · NTU Pinnacle 决赛入围</p>
-                        <p class="project-note">这是一个旗舰级应用人工智能原型，并非经过临床验证的医疗产品；源代码目前未公开。</p>
+                        <div class="project-meta-row">
+                            <p class="project-meta">Flagship project <span>NTU Pinnacle finalist</span></p>
+                            <a class="project-meta-link" href="https://github.com/huajianv587/symface-ar-wellness-ai" target="_blank" rel="noreferrer" aria-label="View the public SymFace code subset on GitHub">GitHub <span aria-hidden="true">&#8594;</span></a>
+                        </div>
+                        <h3>SymFace: AR &amp; Wellness AI App</h3>
+                        <p>An iOS/watchOS wellness prototype combining ARKit TrueDepth facial-mesh tracking, HealthKit context, local record-keeping, AI service routing, and Apple Watch synchronization for skin analysis, care guidance, and follow-up facial-training assessments.</p>
+                        <p class="project-proof">Hybrid on-device and cloud workflow · AR-based measurement · AI service routing</p>
+                        <ul class="project-bullets">
+                            <li>Built a scan-to-report workflow with SwiftUI, ARKit TrueDepth, and SceneKit to capture facial-mesh data, map facial points onto scan views, and render interactive annotations.</li>
+                            <li>Integrated HealthKit context, local JSON/image persistence, EventKit notifications, WatchConnectivity snapshots, Apple Foundation Models, and external AI APIs to support connected care and follow-up facial-training workflows.</li>
+                            <li>Implemented structured plan generation and facial-training metrics with exercise-library validation, threshold-based repetition counting, and trend-based gating for repeatable self-observation sessions.</li>
+                        </ul>
+                        <p class="project-note">A wellness and self-observation prototype, not a clinically validated product; a curated public code subset is available on GitHub.</p>
                         <p class="project-stack">SwiftUI · ARKit · HealthKit · Apple Foundation Models</p>
                     </div>
                 </article>
 
-                <article class="project-entry project-featured">
-                    <figure class="project-thumb">
-                        <img src="assets/quant-platform.jpg" alt="展示持仓、目标波动率和仅纸面执行状态的机构量化投资平台界面" width="1622" height="823" loading="lazy">
-                    </figure>
-                    <div class="project-copy">
-                        <p class="project-meta">公开仓库 <span>研究平台</span></p>
-                        <h3>标普 500 机构级多智能体量化平台</h3>
-                        <p>本地优先的研究终端，从数据导入、因子评分、滚动窗口建模，到证据包、分析师辩论、约束投资组合和纸面订单预览，完整保留时间点数据血缘。</p>
-                        <p class="project-proof">710 项回归测试 · SHA-256 源码清单 · 仅纸面执行</p>
-                        <p class="project-stack">Python · FastAPI · LangGraph · Supabase</p>
-                        <a class="item-link" href="https://github.com/huajianv587/sp500-institutional-quant" target="_blank" rel="noreferrer">查看仓库 <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-
-                <article class="project-entry project-featured">
-                    <figure class="project-thumb">
-                        <canvas class="visual-canvas" data-visual="documents" width="900" height="560" role="img" aria-label="发票文档、信息抽取、人工复核和审计事件示意图"></canvas>
-                    </figure>
-                    <div class="project-copy">
-                        <p class="project-meta">公开仓库 <span>全栈产品</span></p>
-                        <h3>发票审计系统</h3>
-                        <p>面向发票接收、OCR 与大语言模型抽取、风险复核、连接器故障恢复和审计追踪的 Web 工作空间，连接 Next.js、FastAPI、MySQL、Dify、飞书和 Mailpit。</p>
-                        <p class="project-proof">确定性演示数据 · 带认证的复核流程 · Playwright 回归测试</p>
-                        <p class="project-stack">Next.js · FastAPI · MySQL · Dify</p>
-                        <a class="item-link" href="https://github.com/huajianv587/AI-Driven-Invoice-Extraction-Automated-Audit-System" target="_blank" rel="noreferrer">查看仓库 <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-
-                <article class="project-entry project-featured">
-                    <figure class="project-thumb">
-                        <canvas class="visual-canvas" data-visual="tracking" width="900" height="560" role="img" aria-label="视频帧、人员检测和持续跟踪示意图"></canvas>
-                    </figure>
-                    <div class="project-copy">
-                        <p class="project-meta">公开仓库 <span>计算机视觉系统</span></p>
-                        <h3>PitchVision：足球视频分析系统</h3>
-                        <p>双模式体育视频分析系统，结合人员分割、持续跟踪 ID、实时 WebSocket 分析和针对选定目标的 SAM 精修；离线工作流还包括球场标定、运动分析和可审计输出。</p>
-                        <p class="project-proof">前后端测试 · Supabase 项目存储 · Slurm/A40 作业路径</p>
-                        <p class="project-note">完整离线处理依赖已配置的云存储、模型权重和 Slurm/A40 工作节点；仓库本身不等同于已部署的线上服务。</p>
-                        <p class="project-stack">YOLO · ByteTrack · SAM 2.1</p>
-                        <a class="item-link" href="https://github.com/huajianv587/sam-football-analytics" target="_blank" rel="noreferrer">查看仓库 <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
             </div>
         </section>
 
         <section class="content-section" id="research" aria-labelledby="research-title">
             <div class="section-heading">
                 <div>
-                    <p class="section-kicker">研究与专业实践</p>
-                    <h2 id="research-title">研究项目</h2>
+                    <p class="section-kicker">Selected research</p>
+                    <h2 id="research-title">Algorithm Research</h2>
                 </div>
             </div>
             <div class="project-list">
                 <article class="project-entry">
-                    <figure class="project-thumb">
-                        <canvas class="visual-canvas" data-visual="documents" width="900" height="560" role="img" aria-label="金融披露文档、证据片段和可追溯答案示意图"></canvas>
+                    <figure class="project-thumb research-thumb">
+                        <img class="research-illustration" src="assets/esg-docqa-retrieval-pipeline.png" alt="ESG-DocQA retrieval workflow showing data sources, question-only queries, sparse, dense, and multimodal retrieval, gold-page ranking, retrieval metrics, and downstream analysis." width="1086" height="1448" loading="lazy" decoding="async" tabindex="0" role="button" aria-label="Enlarge ESG-DocQA retrieval pipeline illustration">
                     </figure>
                     <div class="project-copy">
-                        <p class="project-meta">第一作者 <span>2026 年 3 月–8 月</span></p>
-                        <h3>ESG-DocQA：人工审核基准与受控检索评测</h3>
-                        <p>面向复杂金融披露和可持续发展报告的长上下文检索研究，结合人工审核、证据链和受控检索对比，评估回答的可追溯性与可靠性。</p>
-                        <p class="publication-status">已被《International Journal of Document Analysis and Recognition》（IJDAR）接收；该期刊为 Springer 旗下 SCIE 收录期刊。</p>
-                    </div>
-                </article>
-
-                <article class="project-entry">
-                    <figure class="project-thumb">
-                        <canvas class="visual-canvas" data-visual="molecules" width="900" height="560" role="img" aria-label="分子结构和模型可靠性评估示意图"></canvas>
-                    </figure>
-                    <div class="project-copy">
-                        <p class="project-meta">第一作者 <span>研究进行中 · 2026 年</span></p>
-                        <h3>支架结构偏移下的 ADMET 模型可靠性</h3>
-                        <p>系统评估不同模型选择策略在 scaffold-disjoint ADMET 测试下的表现，覆盖可靠性遗憾、校准、不确定性、风险覆盖率和适用域行为，涉及 22 个终点和 5 类模型。</p>
-                        <p class="project-proof">22 个终点 · 5 类模型 · 550 次主要实验 · 可复现研究发布</p>
-                        <p class="project-note">研究产物：<em>Trustworthy ADMET Benchmark</em>。这是一项经验性模型评测研究，不是新的分子架构、前瞻性验证或临床工具。</p>
-                        <p class="project-stack">ADMET · QSAR · RDKit · PyTorch · TDC</p>
-                        <a class="item-link" href="https://github.com/huajianv587/admet-trustworthy-benchmark" target="_blank" rel="noreferrer">查看代码与发布页 <span aria-hidden="true">&#8599;</span></a>
-                    </div>
-                </article>
-
-                <article class="project-entry project-private">
-                    <figure class="project-thumb">
-                        <canvas class="visual-canvas" data-visual="medical" width="900" height="560" role="img" aria-label="医疗记录索引、检索和有状态 AI 助手示意图"></canvas>
-                    </figure>
-                    <div class="project-copy">
-                        <p class="project-meta">私有项目 <span>兼职 · AI 工程 · 2026 年 1 月–6 月</span></p>
-                        <h3>兼职 Agent 工程师</h3>
-                        <p>参与构建 Nightingale 医疗 AI Agent 与 RAG 系统，使用混合检索和有状态工作流支持病历搜索、动态工具调用、多轮记忆、检索评测和跨大语言模型回答对比。</p>
-                        <p class="project-note">该项目目前没有公开 GitHub 仓库，因此页面将其作为私有工程经历展示，而不是公开代码样例。</p>
-                        <p class="project-stack">混合检索 · Agent 工作流 · 自动化评测</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="content-section" id="experience" aria-labelledby="experience-title">
-            <h2 id="experience-title">工作经历</h2>
-            <div class="timeline-list">
-                <article class="timeline-entry">
-                    <p class="timeline-date">2021 年 11 月–2025 年 4 月</p>
-                    <div>
-                        <h3>供应链专员 <span>/ 华峰集团有限公司</span></h3>
-                        <ul class="timeline-bullets">
-                            <li>统筹印度尼西亚华庆铝业项目的端到端采购与跨境物流，协调 2 个国家的 89 家供应商，管理年度 380 万新加坡元以上的采购与物流流程；通过统一贸易术语、生产交期和货代计划，在 2 个大型工业项目中保持 99% 的准时交付率。</li>
-                            <li>运用目标成本模型、采购量合并和阶梯定价策略重新谈判供应商合同与商业条款，使平均采购成本降低 11%，每年节省约 39 万新加坡元。</li>
-                            <li>负责全品类跨境货物的进出口报关和货运操作，管理 HS 编码、信用证（L/C）及提单（B/L）、原产地证（C/O）等单证，实现 100% 海关审计通过率，并将港口滞留时间压缩至 1 个工作日内。</li>
-                            <li>将大语言模型和提示词工程与历史消耗分析结合，自动化需求预测和库存计划流程，使采购计划准确率提升 35%，库存周转效率提升 20%。</li>
+                        <div class="project-meta-row">
+                            <p class="project-meta">First &amp; Corresponding Author <span>Mar–Aug 2026</span></p>
+                            <a class="project-meta-link" href="https://doi.org/10.5281/zenodo.22240915" target="_blank" rel="noreferrer" aria-label="Open the ESG-DocQA data and code archive on Zenodo">Data &amp; Code <span aria-hidden="true">&#8594;</span></a>
+                        </div>
+                        <h3>ESG-DocQA: A Human-Reviewed Benchmark and Controlled Retrieval Evaluation</h3>
+                        <p>A benchmark and evaluation study of long-context retrieval for complex financial disclosures, combining human review with controlled evidence comparisons.</p>
+                        <ul class="project-bullets research-bullets">
+                            <li>Constructed a human-reviewed benchmark with report-local candidate pools, question-only queries, and page-level evidence annotations for controlled retrieval evaluation.</li>
+                            <li>Compared sparse, dense, and hybrid retrieval under fixed conditions, using gold-page ranking and retrieval metrics to separate retrieval quality from downstream answer generation.</li>
                         </ul>
+                        <p class="project-stack">Long-Context RAG · Hybrid Retrieval · Financial NLP · Benchmark Construction</p>
+                        <p class="publication-status">Accepted by IJDAR (Springer; SCIE-indexed).</p>
                     </div>
                 </article>
-                <article class="timeline-entry">
-                    <p class="timeline-date">2020 年 5 月–2021 年 10 月</p>
-                    <div>
-                        <h3>数据分析师 <span>/ 温州纽兰达机械科技有限公司</span></h3>
-                        <ul class="timeline-bullets">
-                            <li>使用高级 SQL 数据库设计和自动化清洗规则，整理覆盖 1,000+ 条跨境贸易记录的关系型数据库，为后续分析建立准确率 95% 以上的数据基础。</li>
-                            <li>通过行为队列分析和具有统计显著性的 A/B 测试，优化 40+ 个客户账户的留存流程，识别关键参与模式，推动复购业务提升 50% 以上。</li>
-                            <li>通过端到端 ETL 流程自动化 10+ 个交互式 BI 看板和管理层报告，为 3 位高级管理人员提供决策支持，减少重复数据整理，每周节省 4 个运营小时。</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </section>
 
-        <section class="content-section credentials-section" id="education" aria-labelledby="education-title">
-            <h2 id="education-title">教育背景与技能</h2>
-            <div class="credentials-grid">
-                <div class="education-list">
-                    <article>
-                        <p class="credential-date">2025 年 10 月–2026 年 10 月</p>
-                        <h3>新加坡南洋理工大学</h3>
-                        <p>计算机硕士 · 应用人工智能</p>
-                    </article>
-                    <article>
-                        <p class="credential-date">2016 年 7 月–2020 年 6 月</p>
-                        <h3>西京学院</h3>
-                        <p>文学学士 · 英语国际贸易</p>
-                    </article>
-                </div>
-                <div class="toolkit-list">
-                    <ul class="skill-list">
-                        <li><strong>工程技术</strong>Python、SQL、PyTorch、FastAPI、Docker、Git、AWS SageMaker。</li>
-                        <li><strong>生成式 AI 与 Agent</strong>Qwen 全参数微调、LoRA、DoRA、PiSSA、Advanced RAG、多模态 RAG、LangGraph、多智能体编排、工具调用与记忆。</li>
-                        <li><strong>机器学习与数据科学</strong>监督学习、无监督学习、深度学习、强化学习、分类、回归、集成学习、特征工程、超参数优化、统计建模、A/B 测试、scikit-learn、XGBoost。</li>
-                        <li><strong>计算机视觉与多模态</strong>目标检测、语义分割、实例分割、3D 视觉、ARKit、语音转写、视频生成模型训练与部署、自动化评测框架。</li>
-                        <li><strong>语言</strong>英语（专业工作能力）、普通话（母语）。</li>
-                    </ul>
-                </div>
             </div>
         </section>
 
         <section class="content-section awards-section" id="awards" aria-labelledby="awards-title">
-            <h2 id="awards-title">算法奖项与证书</h2>
-            <div class="awards-panel">
-                <ul class="awards-list">
-                    <li>Kaggle NeurIPS Ariel Challenge 银牌，前 5%</li>
-                    <li>南洋理工大学 Pinnacle 决赛入围 · SymFace</li>
-                    <li>Vesuvius Challenge - Surface Detection 铜牌，前 6%</li>
-                    <li>CFA Institute Certificate in ESG Investing</li>
-                </ul>
+            <h2 id="awards-title">Algorithm Awards</h2>
+            <p class="awards-summary">4× Kaggle Medalist · 1 Silver, 3 Bronze · Top 4.8–9.2% across LLM reasoning, 3D vision, reinforcement learning, and scientific machine learning.</p>
+            <div class="awards-list">
+                <article class="award-entry">
+                    <figure class="award-thumb">
+                        <a class="award-visual award-official" href="https://www.kaggle.com/competitions/ai-mathematical-olympiad-progress-prize-3" target="_blank" rel="noreferrer" aria-label="View AI Mathematical Olympiad Progress Prize 3 official competition page">
+                            <img src="assets/award-aimo3.png" alt="Official competition artwork for AI Mathematical Olympiad - Progress Prize 3" width="560" height="280" loading="lazy">
+                        </a>
+                        <a class="award-visual award-certificate-link" href="assets/award-aimo3-certificate.jpeg" aria-label="Enlarge AI Mathematical Olympiad certificate">
+                            <img class="award-certificate" src="assets/award-aimo3-certificate.jpeg" alt="Kaggle certificate for AI Mathematical Olympiad - Progress Prize 3" width="1920" height="1184" loading="lazy">
+                        </a>
+                    </figure>
+                    <div class="award-copy">
+                        <div class="project-meta-row">
+                            <p class="project-meta">Large Language Models · Mathematical Reasoning · Tool Use <span>Apr 16, 2026</span></p>
+                            <a class="project-meta-link" href="https://github.com/huajianv587/ai-mathematical-olympiad-progress-prize-3_huajian" target="_blank" rel="noreferrer" aria-label="View AI Mathematical Olympiad GitHub repository">GitHub <span aria-hidden="true">&#8594;</span></a>
+                        </div>
+                        <h3>AI Mathematical Olympiad - Progress Prize 3 <span>Bronze Medal · Rank 383 of 4,138 · Top 9.2%</span></h3>
+                        <ul class="award-bullets">
+                            <li>Built a tool-augmented mathematical reasoning system around a locally hosted <code>gpt-oss-120b</code> model, using vLLM, OpenAI Harmony message formatting, and a stateful Python/Jupyter sandbox for symbolic and numerical verification.</li>
+                            <li>Ran up to eight independently seeded reasoning attempts per problem, extracted valid integer answers, and applied inverse-entropy-weighted voting with early stopping once four valid answers agreed.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="award-entry">
+                    <figure class="award-thumb">
+                        <a class="award-visual award-official" href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection" target="_blank" rel="noreferrer" aria-label="View Vesuvius Challenge Surface Detection official competition page">
+                            <img src="assets/award-vesuvius.jpg" alt="Official competition artwork for Vesuvius Challenge - Surface Detection" width="560" height="280" loading="lazy">
+                        </a>
+                        <a class="award-visual award-certificate-link" href="assets/award-vesuvius-certificate.jpeg" aria-label="Enlarge Vesuvius Challenge certificate">
+                            <img class="award-certificate" src="assets/award-vesuvius-certificate.jpeg" alt="Kaggle certificate for Vesuvius Challenge - Surface Detection" width="1920" height="1184" loading="lazy">
+                        </a>
+                    </figure>
+                    <div class="award-copy">
+                        <div class="project-meta-row">
+                            <p class="project-meta">Computer Vision · 3D Imaging · Volumetric Segmentation <span>Feb 28, 2026</span></p>
+                            <a class="project-meta-link" href="https://github.com/huajianv587/vesuvius-challenge-surface-detection_huajian" target="_blank" rel="noreferrer" aria-label="View Vesuvius Challenge GitHub repository">GitHub <span aria-hidden="true">&#8594;</span></a>
+                        </div>
+                        <h3>Vesuvius Challenge - Surface Detection <span>Bronze Medal · Rank 85 of 1,391 · Top 6.1%</span></h3>
+                        <ul class="award-bullets">
+                            <li>Developed a full-resolution (3d_fullres) volumetric segmentation pipeline with nnUNet and a ResEnc-M residual encoder backbone, capturing fine-grained papyrus surface layers from high-noise 3D X-ray scans.</li>
+                            <li>Implemented probability-based 3D post-processing with dual-threshold hysteresis at 0.25 and 0.8, anisotropic morphological closing, and filtering of connected components smaller than 250 voxels, converting fragmented voxel predictions into continuous, submission-ready surface masks.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="award-entry">
+                    <figure class="award-thumb">
+                        <a class="award-visual award-official" href="https://www.kaggle.com/competitions/um-game-playing-strength-of-mcts-variants" target="_blank" rel="noreferrer" aria-label="View UM Game-Playing Strength of MCTS Variants official competition page">
+                            <img src="assets/award-mcts.png" alt="Official competition artwork for UM - Game-Playing Strength of MCTS Variants" width="560" height="280" loading="lazy">
+                        </a>
+                        <a class="award-visual award-certificate-link" href="assets/award-mcts-certificate.jpeg" aria-label="Enlarge UM Game-Playing Strength of MCTS Variants certificate">
+                            <img class="award-certificate" src="assets/award-mcts-certificate.jpeg" alt="Kaggle certificate for UM - Game-Playing Strength of MCTS Variants" width="1358" height="710" loading="lazy">
+                        </a>
+                    </figure>
+                    <div class="award-copy">
+                        <div class="project-meta-row">
+                            <p class="project-meta">Reinforcement Learning · Decision AI · Search Algorithms <span>Dec 3, 2024</span></p>
+                            <a class="project-meta-link" href="https://github.com/huajianv587/um-game-playing-strength-of-mcts-variants_huajian" target="_blank" rel="noreferrer" aria-label="View UM Game-Playing Strength of MCTS Variants GitHub repository">GitHub <span aria-hidden="true">&#8594;</span></a>
+                        </div>
+                        <h3>UM - Game-Playing Strength of MCTS Variants <span>Bronze Medal · Rank 119 of 1,608 · Top 7.4%</span></h3>
+                        <ul class="award-bullets">
+                            <li>Engineered high-dimensional tabular and text features from agent, game, and ruleset metadata using interaction-ratio features, one-hot encoding, text-length statistics, and TF-IDF representations to capture structural patterns across games for downstream tree models.</li>
+                            <li>Designed a leakage-aware ensemble using 5-fold StratifiedGroupKFold with GameRulesetName as the grouping key, heterogeneous GPU CatBoost and CPU LightGBM branches, and two-stage OOF blending, achieving a private leaderboard score of 0.43045.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="award-entry award-highlight">
+                    <figure class="award-thumb">
+                        <a class="award-visual award-official" href="https://www.kaggle.com/competitions/ariel-data-challenge-2024" target="_blank" rel="noreferrer" aria-label="View NeurIPS Ariel Data Challenge 2024 official competition page">
+                            <img src="assets/award-ariel.jpg" alt="Official competition artwork for NeurIPS - Ariel Data Challenge 2024" width="559" height="280" loading="lazy">
+                        </a>
+                        <a class="award-visual award-certificate-link" href="assets/award-ariel-certificate.jpeg" aria-label="Enlarge NeurIPS Ariel Data Challenge certificate">
+                            <img class="award-certificate" src="assets/award-ariel-certificate.jpeg" alt="Kaggle certificate for NeurIPS - Ariel Data Challenge 2024" width="1358" height="744" loading="lazy">
+                        </a>
+                    </figure>
+                    <div class="award-copy">
+                        <p class="project-meta">Data Science · Time Series · Sensor Signal Processing <span>Nov 1, 2024</span></p>
+                        <h3>NeurIPS - Ariel Data Challenge 2024 <span>Silver Medal · Rank 56 of 1,151 · Top 4.8%</span></h3>
+                        <ul class="award-bullets">
+                            <li>Developed a scientific machine learning regression workflow to recover exoplanet transit signals from multimodal readings from Ariel's optical instruments while mitigating noise across spectral channels.</li>
+                            <li>Optimized multi-wavelength signal recovery and predictive uncertainty estimation under the Ariel Gaussian Log Likelihood protocol, delivering an end-to-end competition submission pipeline.</li>
+                        </ul>
+                    </div>
+                </article>
+
             </div>
         </section>
 
         <footer class="site-footer" id="contact">
-            <p>蒋华健 · 应用人工智能 / 研究 / 工程 · 2026</p>
-            <p><a href="mailto:jianghuajian99@gmail.com">邮箱</a> · <a href="https://www.linkedin.com/in/huajianjiang/" target="_blank" rel="noreferrer">领英</a> · <a href="https://github.com/jianghuajian-johnny" target="_blank" rel="noreferrer">GitHub</a></p>
+            <p>Huajian Jiang · Applied AI / Research / Engineering · 2026</p>
+            <p><a href="mailto:jianghuajian99@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/huajianjiang/" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://github.com/huajianv587" target="_blank" rel="noreferrer">GitHub</a></p>
         </footer>
     </main>
 </body>

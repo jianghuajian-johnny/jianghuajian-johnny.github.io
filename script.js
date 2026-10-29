@@ -326,3 +326,70 @@ function paintAll() {
 
 paintAll();
 window.addEventListener("resize", paintAll, { passive: true });
+
+const lightbox = document.createElement("div");
+lightbox.className = "image-lightbox";
+lightbox.hidden = true;
+lightbox.setAttribute("role", "dialog");
+lightbox.setAttribute("aria-modal", "true");
+lightbox.setAttribute("aria-label", "Enlarged image");
+lightbox.tabIndex = -1;
+
+const lightboxImage = document.createElement("img");
+lightboxImage.alt = "";
+lightbox.append(lightboxImage);
+document.body.append(lightbox);
+let closeTimer = 0;
+let lightboxTriggerToRestore = null;
+
+function closeLightbox() {
+    window.clearTimeout(closeTimer);
+    lightbox.classList.remove("is-open");
+    document.body.classList.remove("lightbox-open");
+    closeTimer = window.setTimeout(() => {
+        lightbox.hidden = true;
+        lightboxImage.removeAttribute("src");
+        lightboxTriggerToRestore?.focus({ preventScroll: true });
+        lightboxTriggerToRestore = null;
+    }, 180);
+}
+
+function openLightbox(image) {
+    window.clearTimeout(closeTimer);
+    lightboxTriggerToRestore = image.closest("a") || image;
+    lightboxImage.src = image.currentSrc || image.src;
+    lightboxImage.alt = image.alt;
+    lightbox.hidden = false;
+    document.body.classList.add("lightbox-open");
+    requestAnimationFrame(() => {
+        lightbox.classList.add("is-open");
+        lightbox.focus({ preventScroll: true });
+    });
+}
+
+const lightboxTriggers = [
+    ...document.querySelectorAll(".project-visual-link"),
+    ...document.querySelectorAll(".research-illustration"),
+    ...document.querySelectorAll(".award-certificate-link")
+];
+
+lightboxTriggers.forEach((trigger) => {
+    const image = trigger.matches("img") ? trigger : trigger.querySelector("img");
+    if (!image) return;
+
+    trigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        openLightbox(image);
+    });
+
+    trigger.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+        event.preventDefault();
+        openLightbox(image);
+    });
+});
+
+lightbox.addEventListener("click", closeLightbox);
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !lightbox.hidden) closeLightbox();
+});
